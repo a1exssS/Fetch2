@@ -88,7 +88,7 @@ loadLinks(shuffledArray).then((res) => {
 			elements = `
 			<div class="show__item">
 				<img class="show__img" src="${res[i].attributes.posterImage.original}" />
-				<input class="show__input" type="text"/>
+				<input class="show__input" placeholder="type your answer" type="text"/>
 			<div>
 			`
 			document.querySelector('.show__items').insertAdjacentHTML('afterbegin', elements)
