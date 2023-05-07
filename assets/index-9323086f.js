@@ -3,6 +3,6 @@
 			`;document.querySelector(".show__items").insertAdjacentHTML("afterbegin",l),document.querySelector("#submitTheAnswer").style.display="none",document.querySelector("#show").style.display="flex",document.querySelector("#show").textContent="Restart",document.querySelector("#show").addEventListener("click",()=>{window.location.reload()});return}for(let l=s-1;l<s;l++)e=i[l].attributes.titles.en.toLowerCase(),r=`
 			<div class="show__item">
 				<img class="show__img" src="${i[l].attributes.posterImage.original}" />
-				<input class="show__input" type="text"/>
+				<input placeholder="type your answer" class="show__input" type="text"/>
 			<div>
 			`,document.querySelector(".show__items").insertAdjacentHTML("afterbegin",r)}document.querySelector("#submitTheAnswer").addEventListener("click",()=>{let s=document.querySelector(".show__input").value;s=s.toLowerCase(),(e==s||e.includes(s)&&s!=="")&&(t+=1),document.querySelector(".show__item").remove(),n+=1,o(n)})}).catch(i=>{console.log(i)});
